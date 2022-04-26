@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header -->
+    <!-- <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-pink-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Her Fables</span>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900">Poems</a>
+            <a class="mr-5 hover:text-gray-900">Stories</a>
+            <a class="mr-5 hover:text-gray-900">One liners</a>
+            <a class="mr-5 hover:text-gray-900">Galleries</a>
+          </nav>
+          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Contribute
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header> -->
+      <header class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-pink-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Her Fables</span>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-white">Poems</a>
+            <a class="mr-5 hover:text-white">Stories</a>
+            <a class="mr-5 hover:text-white">One liners</a>
+            <a class="mr-5 hover:text-white">Galleries</a>
+          </nav>
+          <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Contribute
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+
+
+
+      <!-- Hero -->
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">And just as the Phoenix rose from the ashes, she too will rise...</h1>
+            <p class="mb-8 leading-relaxed">I am your dreamcatcher, Your shelter in the night. I am your dreamcatcher, protector from the fright. I am your dreamcatcher, as if our minds would be entwined, I catch yours and you catch mine..</p>
+            <div class="flex w-full md:justify-start justify-center items-end">
+              <div class="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
+                <!-- <label for="hero-field" class="leading-7 text-sm text-gray-400">Placeholder</label> -->
+                <input type="text" id="hero-field" name="hero-field" class="w-full bg-gray-800 rounded bg-opacity-40 border border-gray-700 focus:ring-2 focus:ring-pink-900 focus:bg-transparent focus:border-pink-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+              <button class="inline-flex text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-lg">Join me</button>
+            </div>
+            <p class="text-sm mt-2 text-gray-500 mb-8 w-full">Enter your email address to join me in my journey.</p>
+            <div class="flex lg:flex-row md:flex-col text-gray-300">
+              <button class="bg-gray-800 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-700 hover:text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 512 512">
+                  <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"></path>
+                </svg>
+                <span class="ml-4 flex items-start flex-col leading-none">
+                  <span class="text-xs text-gray-400 mb-1">GET IT ON</span>
+                  <span class="title-font font-medium">Google Play</span>
+                </span>
+              </button>
+              <button class="bg-gray-800 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-700 hover:text-white focus:outline-none lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 305 305">
+                  <path d="M40.74 112.12c-25.79 44.74-9.4 112.65 19.12 153.82C74.09 286.52 88.5 305 108.24 305c.37 0 .74 0 1.13-.02 9.27-.37 15.97-3.23 22.45-5.99 7.27-3.1 14.8-6.3 26.6-6.3 11.22 0 18.39 3.1 25.31 6.1 6.83 2.95 13.87 6 24.26 5.81 22.23-.41 35.88-20.35 47.92-37.94a168.18 168.18 0 0021-43l.09-.28a2.5 2.5 0 00-1.33-3.06l-.18-.08c-3.92-1.6-38.26-16.84-38.62-58.36-.34-33.74 25.76-51.6 31-54.84l.24-.15a2.5 2.5 0 00.7-3.51c-18-26.37-45.62-30.34-56.73-30.82a50.04 50.04 0 00-4.95-.24c-13.06 0-25.56 4.93-35.61 8.9-6.94 2.73-12.93 5.09-17.06 5.09-4.64 0-10.67-2.4-17.65-5.16-9.33-3.7-19.9-7.9-31.1-7.9l-.79.01c-26.03.38-50.62 15.27-64.18 38.86z"></path>
+                  <path d="M212.1 0c-15.76.64-34.67 10.35-45.97 23.58-9.6 11.13-19 29.68-16.52 48.38a2.5 2.5 0 002.29 2.17c1.06.08 2.15.12 3.23.12 15.41 0 32.04-8.52 43.4-22.25 11.94-14.5 17.99-33.1 16.16-49.77A2.52 2.52 0 00212.1 0z"></path>
+                </svg>
+                <span class="ml-4 flex items-start flex-col leading-none">
+                  <span class="text-xs text-gray-400 mb-1">Download on the</span>
+                  <span class="title-font font-medium">App Store</span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="hero" src="assets/logo-removebg-preview.png">
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+      <!-- CONTENT -->
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 md:w-1/3">
+              <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="assets/cov4.jpg" alt="blog">
+                <div class="p-6">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">CATEGORY</h2>
+                  <h1 class="title-font text-lg font-medium text-white mb-3">The Catalyzer</h1>
+                  <p class="leading-relaxed mb-3">Physical intimacy might be beautiful. But it's weak. Mental intimacy might be confusing. But it's strong.</p>
+                  <div class="flex items-center flex-wrap ">
+                    <a class="text-pink-400 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                    <span class="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-800">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>1.2K
+                    </span>
+                    <span class="text-gray-500 inline-flex items-center leading-none text-sm">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>6
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="assets//cov5.jpg" alt="blog">
+                <div class="p-6">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">CATEGORY</h2>
+                  <h1 class="title-font text-lg font-medium text-white mb-3">The 400 Blows</h1>
+                  <p class="leading-relaxed mb-3">Crawl inside my body.. find where I am the most ruined and love me there... I will spread like morning light for you if you touch me where I smile!.</p>
+                  <div class="flex items-center flex-wrap">
+                    <a class="text-pink-400 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                    <span class="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-800">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>1.2K
+                    </span>
+                    <span class="text-gray-500 inline-flex items-center leading-none text-sm">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>6
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="assets/cov3.jpg" alt="blog">
+                <div class="p-6">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">CATEGORY</h2>
+                  <h1 class="title-font text-lg font-medium text-white mb-3">Shooting Stars</h1>
+                  <p class="leading-relaxed mb-3">Don't expect to get what you give. Not everyone has a heart like you.</p>
+                  <div class="flex items-center flex-wrap ">
+                    <a class="text-pink-400 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                    <span class="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-800">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>1.2K
+                    </span>
+                    <span class="text-gray-500 inline-flex items-center leading-none text-sm">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>6
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- STATISTICS -->
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Our statistics</h1>
+            <!-- <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p> -->
+          </div>
+          <div class="flex flex-wrap -m-4 text-center">
+            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-pink-400 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                  <path d="M8 17l4 4 4-4m-4-5v9"></path>
+                  <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
+                </svg>
+                <h2 class="title-font font-medium text-3xl text-white">2.7K</h2>
+                <p class="leading-relaxed">Downloads</p>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-pink-400 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+                </svg>
+                <h2 class="title-font font-medium text-3xl text-white">1.3K</h2>
+                <p class="leading-relaxed">Users</p>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-pink-400 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                  <path d="M3 18v-6a9 9 0 0118 0v6"></path>
+                  <path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"></path>
+                </svg>
+                <h2 class="title-font font-medium text-3xl text-white">74</h2>
+                <p class="leading-relaxed">Files</p>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-pink-400 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <h2 class="title-font font-medium text-3xl text-white">46</h2>
+                <p class="leading-relaxed">Places</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- OUR TEAM -->
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="text-2xl font-medium title-font mb-4 text-white">OUR TEAM</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Meet our team.</p>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 lg:w-1/4 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://media-exp1.licdn.com/dms/image/C4D03AQGyPyZ9ZqlDyw/profile-displayphoto-shrink_200_200/0/1642412949976?e=1656547200&v=beta&t=jGekbebOgkfBLLSCcib7PICOZplIMHj2yXFQVzXGxKI">
+                <div class="w-full">
+                  <h2 class="title-font font-medium text-lg text-white">Akansha Kumari</h2>
+                  <h3 class="text-gray-500 mb-3">CEO, Content Creator and Back End Developer</h3>
+                  <p class="mb-4">A very loving and charming young lady who always keeps her work as her first priority. A constant source of motivation for the rest of the team.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-700">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-700">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-700">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/4 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="assets/ppic.jpg">
+                <div class="w-full">
+                  <h2 class="title-font font-medium text-lg text-white">Debabrata Bhakat</h2>
+                  <h3 class="text-gray-500 mb-3">Stalks the CEO</h3>
+                  <p class="mb-4">Has no work, just keeps trying to hit on the CEO.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-700">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-700">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-700">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/4 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="data:image/jpeg;base64,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">
+                <div class="w-full">
+                  <h2 class="title-font font-medium text-lg text-white">Elon Musk</h2>
+                  <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                  <p class="mb-4">Has a lot of great ideas!</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-700">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-700">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-700">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/4 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="data:image/jpeg;base64,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">
+                <div class="w-full">
+                  <h2 class="title-font font-medium text-lg text-white">jacqueline fernandez</h2>
+                  <h3 class="text-gray-500 mb-3">Designer</h3>
+                  <p class="mb-4">Does make up all day.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-700">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-700">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-700">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- CONTACT US -->
+      <section class="text-gray-400 bg-gray-900 body-font relative">
+        <div class="absolute inset-0 bg-gray-900">
+          <iframe title="map" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.16);"></iframe>
+        </div>
+        <div class="container px-5 py-24 mx-auto flex">
+          <div class="lg:w-1/3 md:w-1/2 bg-gray-900 shadow-md rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
+            <h2 class="text-white text-lg mb-1 font-medium title-font">Feedback</h2>
+            <p class="leading-relaxed mb-5">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
+            <div class="relative mb-4">
+              <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
+              <input type="email" id="email" name="email" class="w-full bg-gray-800 rounded border border-gray-700 focus:border-pink-500 focus:ring-2 focus:ring-pink-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <div class="relative mb-4">
+              <label for="message" class="leading-7 text-sm text-gray-400">Message</label>
+              <textarea id="message" name="message" class="w-full bg-gray-800 rounded border border-gray-700 focus:border-pink-500 focus:ring-2 focus:ring-pink-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+            </div>
+            <button class="text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-lg">Button</button>
+            <p class="text-xs text-gray-400 text-opacity-90 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <!-- FOOTER -->
+      <footer class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap md:text-left text-center order-first">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-400 hover:text-white">First Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white">Second Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white">Third Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white">Fourth Link</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-400 hover:text-white">First Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white">Second Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white">Third Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white">Fourth Link</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-400 hover:text-white">First Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white">Second Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white">Third Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white">Fourth Link</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">SUBSCRIBE</h2>
+              <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+                <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+                  <label for="footer-field" class="leading-7 text-sm text-gray-400">Email</label>
+                  <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-800 rounded border bg-opacity-40 border-gray-700 focus:bg-transparent focus:ring-2 focus:ring-pink-900 focus:border-pink-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded">Button</button>
+              </div>
+              <p class="text-gray-500 text-sm mt-2 md:text-left text-center">Join our newsletter
+                <!-- <br class="lg:block hidden">waistcoat green juice -->
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-800 bg-opacity-75">
+          <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-pink-500 rounded-full" viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+              <span class="ml-3 text-xl">Her FAbles</span>
+            </a>
+            <p class="text-sm text-gray-400 sm:ml-6 sm:mt-0 mt-4">© 2020 Her Fables —
+              <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@miss_plutonian</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+              <a class="text-gray-400">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-400">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-400">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-400">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
